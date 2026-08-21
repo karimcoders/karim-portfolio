@@ -14,7 +14,7 @@
  .heroFoot{padding-top:24px;border-top:1px solid #292c28;margin-top:35px}
  main>section:not(.hero){border-top:1px solid rgba(130,134,126,.18)}
  .about,.services,.work,.case,.skills,.philosophy,.process,.why,.story,.contact,.finalCta{padding-left:0;padding-right:0;padding-top:135px;padding-bottom:135px}
- .about>*,.services>*,.work>*,.case>*,.skills>*,.philosophy>*,.process>*,.why>*,.story>*,.contact>*,.finalCta>*{width:var(--shell)}
+ .about>*,.services>*,.work>*,.case>*,.skills>*,.philosophy>*,.process>*,.why>*,.story>*,.contact>*,.finalCta>*{width:var(--shell);margin-left:auto;margin-right:auto}
  .sectionHead{grid-template-columns:2fr 6fr 4fr;gap:32px;margin-bottom:78px;align-items:start}
  .sectionHead .kicker{padding-top:9px}.sectionHead h2{max-width:780px}.sectionHead p{max-width:430px;justify-self:end;padding-top:7px}
  .split{width:var(--shell);grid-template-columns:5fr 7fr;gap:7vw;align-items:start}

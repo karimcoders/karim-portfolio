@@ -1,0 +1,16 @@
+section[id]{scroll-margin-top:92px}
+.projectInfo>small{display:inline-flex;align-items:center;gap:8px}
+.projectInfo>small:before{content:"";width:7px;height:7px;border-radius:50%;background:#72a400;box-shadow:0 0 0 4px rgba(114,164,0,.12)}
+.projectInfo .textLink{border:0;border-radius:8px;padding:13px 16px;background:#151714;color:#fff;transition:.25s}
+.projectInfo .textLink:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.16)}
+.project-z-one .projectInfo .textLink{background:#d88700}.project-z-one .projectInfo>small:before{background:#e89a00}
+.project-coffee-co .projectInfo .textLink{background:#a84148}.project-coffee-co .projectInfo>small:before{background:#e67b73}
+.project-mylk .projectInfo .textLink{background:#6b233a}.project-mylk .projectInfo>small:before{background:#b54e70}
+.projectMedia:after{content:"LIVE BUILD";position:absolute;left:18px;top:18px;padding:8px 11px;border-radius:7px;background:rgba(15,17,15,.84);color:#fff;font-size:9px;letter-spacing:.12em;backdrop-filter:blur(8px)}
+
+@media(min-width:1100px){
+ .work{overflow:hidden}.projectCard{position:relative;padding-bottom:30px}
+ .projectCard:not(:last-child):after{content:"";position:absolute;left:0;right:0;bottom:-72px;height:1px;background:#d3d5cd}
+ .projectInfo .textLink{margin-top:7px}
+}
+@media(max-width:700px){.projectMedia:after{left:10px;top:10px;padding:7px 9px}.projectInfo .textLink{width:100%;justify-content:space-between}}

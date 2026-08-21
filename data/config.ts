@@ -16,14 +16,51 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  { title:'MROOI — AI SEO & Digital Tools Platform', slug:'mrooi', category:'AI • SEO • SaaS • Web Tools', description:'A digital tools ecosystem evolving toward a flagship evidence-first AI SEO audit platform.', image:'/projects/mrooi.jpg', technologies:['PHP','JavaScript','Next.js','TypeScript','AI APIs'], challenge:'Turn complex technical SEO signals into clear, customer-facing decisions.', solution:'Designed a modular audit suite covering technical SEO, performance, security, schema, content and social metadata with letter-grade reporting.', features:['Core Web Vitals','Security checks','Schema analysis','Content analysis','Evidence-first scoring'], year:'2026', caseStudy:true, featured:true },
-  { title:'Bharat Hunt', slug:'bharat-hunt', category:'Platform • Web Application', description:'A community-driven platform for discovering and showcasing Indian projects, startups and ventures.', image:'/projects/bharat-hunt.jpg', technologies:['Web Platform','Responsive UI','Product Design'], challenge:'Make user-submitted ventures easy to add, browse and discover.', solution:'Structured the experience around clear project listings, discovery and community participation.', year:'2026', liveUrl:'https://bharathunt.org/', caseStudy:true, featured:true },
-  { title:'Real-Time Cricket Scoring Platform', slug:'cricket-scoring', category:'Web App • Firebase • Real-Time Data', description:'A live scoring application with separate admin controls and user-facing match experiences.', image:'/projects/cricket.jpg', technologies:['HTML','CSS','JavaScript','Firebase'], challenge:'Keep match state, player statistics and multiple live views synchronized.', solution:'Built a Firebase Realtime Database workflow for scoring, striker management, innings, archives and instant score updates.', features:['Toss & team selection','Runs, wickets & extras','Player statistics','Multiple matches','Reset/archive workflow'], year:'2025', caseStudy:true, featured:true },
-  { title:'Smart Inventory & Shop Management', slug:'inventory', category:'Business Web App • Inventory', description:'A mobile-responsive product concept for stock, location, payment and multi-shop workflows.', image:'/projects/inventory.jpg', technologies:['JavaScript','Business UX','QR Workflows'], challenge:'Unify everyday shop operations without making the interface complex.', solution:'Explored product tracking, warehouse location, search, QR payments, receipts, accounts, alerts and AI-assisted workflows.', year:'2025', caseStudy:true, featured:true },
-  { title:'Tanvi Eye Center', slug:'tanvi-eye-center', category:'Healthcare • WordPress • UI/UX', description:'A trust-focused healthcare website with clear services, modern hierarchy and conversion-led calls to action.', image:'/projects/tanvi.jpg', technologies:['WordPress','Elementor','Responsive Design'], challenge:'Present clinical services clearly while keeping the experience welcoming and credible.', solution:'Created a responsive information structure with strong service navigation and accessible enquiry paths.', year:'2025', caseStudy:true, featured:true },
-  { title:'Blueways Water Solutions', slug:'blueways', category:'Corporate Website • WordPress', description:'A brand-led corporate website for a water solutions company, structured around services and business credibility.', image:'/projects/blueways.jpg', technologies:['WordPress','UI/UX','Corporate Web'], challenge:'Turn a technical service offering into an understandable business website.', solution:'Applied the established teal and blue identity to a responsive, service-first content system.', features:['Client-provided: 1,000+ completed projects','Client-provided: 1.5M+ litres saved/day','Client-provided: 250+ satisfied customers'], year:'2025', caseStudy:true, featured:true },
-  { title:'Adprint', slug:'adprint', category:'Corporate Website • WordPress • Performance', description:'WordPress and Elementor development with responsive implementation, optimization and performance troubleshooting.', image:'/projects/mrooi.jpg', technologies:['WordPress','Elementor','Performance'], challenge:'Improve reliability and responsiveness in a real-world WordPress build.', solution:'Combined UI implementation with structured troubleshooting and performance optimization.', year:'2025', caseStudy:false, featured:false },
-  { title:'E-Commerce & Online Stores', slug:'ecommerce', category:'WooCommerce • Shopify', description:'Responsive storefront systems spanning product pages, customer accounts, payments, checkout and product management.', image:'/projects/inventory.jpg', technologies:['WooCommerce','Shopify','Payments'], challenge:'Create friction-free shopping journeys that remain manageable for store teams.', solution:'Build around clear product discovery, dependable checkout and practical catalog operations.', year:'2025', caseStudy:false, featured:false }
+  {
+    title: 'Z—ONE Product Launch Experience',
+    slug: 'z-one',
+    category: 'Creative Development • Product Landing',
+    description: 'An immersive product story for a futuristic footwear concept, combining bold editorial typography, floating product imagery and a detailed technology narrative.',
+    image: '/projects/z-one-showcase.jpg',
+    technologies: ['React', 'JavaScript', 'Responsive UI', 'Motion Design'],
+    challenge: 'Make a single product feel premium, technical and memorable without turning the experience into a conventional online store.',
+    solution: 'Built a high-impact scrolling narrative with colour selection, technical feature sections, blueprint storytelling and responsive product presentation.',
+    features: ['Interactive colour selection', 'Floating product presentation', 'Editorial technology sections', 'Responsive experience'],
+    year: '2026',
+    liveUrl: '/demos/z-one/',
+    caseStudy: true,
+    featured: true
+  },
+  {
+    title: 'Coffee & Co. Brand Experience',
+    slug: 'coffee-co',
+    category: 'Brand Website • Interactive Menu',
+    description: 'A colourful beverage brand experience that turns a signature menu into a strong visual product showcase with story, quality and contact sections.',
+    image: '/projects/coffee-showcase.jpg',
+    technologies: ['React', 'Responsive Design', 'UI Animation', 'Product UX'],
+    challenge: 'Present multiple flavours with distinct personalities while keeping one consistent premium brand language.',
+    solution: 'Created a responsive experience around bold colour systems, isolated product visuals, concise product cards and a clear brand story.',
+    features: ['Signature menu', 'Product-focused visuals', 'Responsive layouts', 'Contact experience'],
+    year: '2026',
+    liveUrl: '/demos/coffee-co/#products',
+    caseStudy: true,
+    featured: true
+  },
+  {
+    title: 'MYLK — Editorial Product Story',
+    slug: 'mylk',
+    category: 'Creative Website • Product Storytelling',
+    description: 'A premium editorial landing experience built around flavour, ritual and a visually rich product journey.',
+    image: '/projects/mylk-showcase.jpg',
+    technologies: ['React', 'CSS Animation', 'Responsive UI', 'Creative Direction'],
+    challenge: 'Translate a tactile café product into a digital experience that feels refined, warm and visually distinctive.',
+    solution: 'Used layered imagery, oversized typography, product-led sections and subtle interaction to create a memorable browsing experience.',
+    features: ['Editorial hero', 'Product storytelling', 'Motion details', 'Mobile-responsive design'],
+    year: '2026',
+    liveUrl: '/demos/mylk/',
+    caseStudy: true,
+    featured: true
+  }
 ];
 
 export const services = [
