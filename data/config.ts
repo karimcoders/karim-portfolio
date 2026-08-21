@@ -17,17 +17,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'AERION — Performance Product Experience',
-    slug: 'aerion',
+    title: 'NEXORA — Performance Product Experience',
+    slug: 'nexora',
     category: 'Creative Development • Product Landing',
     description: 'An original product story for a futuristic performance footwear concept, combining bold editorial typography, floating product imagery and a detailed technology narrative.',
-    image: '/projects/aerion.jpg',
+    image: '/projects/nexora.jpg',
     technologies: ['React', 'JavaScript', 'Responsive UI', 'Motion Design'],
     challenge: 'Make a single product feel premium, technical and memorable without turning the experience into a conventional online store.',
     solution: 'Built a high-impact scrolling narrative with colour selection, technical feature sections, blueprint storytelling and responsive product presentation.',
     features: ['Interactive colour selection', 'Floating product presentation', 'Editorial technology sections', 'Responsive experience'],
     year: '2026',
-    liveUrl: '/demos/aerion/',
+    liveUrl: '/demos/nexora/',
     caseStudy: true,
     featured: true
   },

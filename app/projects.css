@@ -3,7 +3,7 @@ section[id]{scroll-margin-top:92px}
 .projectInfo>small:before{content:"";width:7px;height:7px;border-radius:50%;background:#72a400;box-shadow:0 0 0 4px rgba(114,164,0,.12)}
 .projectInfo .textLink{border:0;border-radius:8px;padding:13px 16px;background:#151714;color:#fff;transition:.25s}
 .projectInfo .textLink:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.16)}
-.project-aerion .projectInfo .textLink{background:#356dff}.project-aerion .projectInfo>small:before{background:#caff45}
+.project-nexora .projectInfo .textLink{background:#356dff}.project-nexora .projectInfo>small:before{background:#caff45}
 .project-siplab .projectInfo .textLink{background:#55275b}.project-siplab .projectInfo>small:before{background:#b9ffd8}
 .project-soma .projectInfo .textLink{background:#4e2452}.project-soma .projectInfo>small:before{background:#dab7ff}
 .projectMedia:after{content:"LIVE BUILD";position:absolute;left:18px;top:18px;padding:8px 11px;border-radius:7px;background:rgba(15,17,15,.84);color:#fff;font-size:9px;letter-spacing:.12em;backdrop-filter:blur(8px)}
