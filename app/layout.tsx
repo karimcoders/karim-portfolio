@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './mobile.css';
 import { siteConfig } from '@/data/config';
 
 export const metadata: Metadata = {
