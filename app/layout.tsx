@@ -4,6 +4,7 @@ import './mobile.css';
 import './desktop.css';
 import './projects.css';
 import './polish.css';
+import './hero-clean.css';
 import { siteConfig } from '@/data/config';
 
 export const metadata: Metadata = {
