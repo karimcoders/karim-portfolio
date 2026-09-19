@@ -12,10 +12,28 @@ export const siteConfig = {
 export type Project = {
   title: string; slug: string; category: string; description: string; image: string;
   technologies: string[]; challenge: string; solution: string; features?: string[];
-  year: string; liveUrl?: string; caseStudy: boolean; featured: boolean;
+  year: string; liveUrl?: string; adminUrl?: string; demoLogin?: { id: string; password: string };
+  caseStudy: boolean; featured: boolean;
 };
 
 export const projects: Project[] = [
+  {
+    title: 'ADIELAS — Pediatric Nutrition E-Commerce',
+    slug: 'adielas',
+    category: 'E-Commerce • Full Store + Admin Panel',
+    description: 'A premium e-commerce experience for ADIELAS, a pediatric nutrition brand selling stage-wise sprouted ragi and multigrain products — complete product catalog, cart, multi-gateway checkout and a full admin panel.',
+    image: '/projects/adielas.jpg',
+    technologies: ['Next.js', 'React', 'TypeScript', 'E-Commerce', 'Admin Panel', 'UPI & Card Payments'],
+    challenge: 'Sell age-stage baby food online with the trust, clarity and simplicity parents need — plus give the brand owner a practical way to manage products and orders.',
+    solution: 'Built a complete store on Next.js: stage-wise product journeys, cart and multi-gateway checkout, plus an admin panel with open demo credentials so the full backend can be explored.',
+    features: ['Stage-wise product catalog', 'Cart & secure checkout (UPI, cards, wallets)', 'Admin panel with demo access', 'Pediatrician-trust storytelling', 'Responsive premium design'],
+    year: '2026',
+    liveUrl: 'https://adielas-ecommerce.vercel.app/',
+    adminUrl: 'https://adielas-ecommerce.vercel.app/admin',
+    demoLogin: { id: 'admin@adielas.com', password: 'Admin@123' },
+    caseStudy: false,
+    featured: true
+  },
   {
     title: 'NEXORA — Performance Product Experience',
     slug: 'nexora',

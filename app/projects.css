@@ -6,11 +6,20 @@ section[id]{scroll-margin-top:92px}
 .project-nexora .projectInfo .textLink{background:#356dff}.project-nexora .projectInfo>small:before{background:#caff45}
 .project-siplab .projectInfo .textLink{background:#55275b}.project-siplab .projectInfo>small:before{background:#b9ffd8}
 .project-soma .projectInfo .textLink{background:#4e2452}.project-soma .projectInfo>small:before{background:#dab7ff}
+.project-adielas .projectInfo .textLink{background:#b0561f}.project-adielas .projectInfo>small:before{background:#ffb35c}
+.projectLinks{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:7px}
+.textLink.ghost{background:transparent;border:1px solid #2c2f29;color:#151714}
+.textLink.ghost:hover{border-color:#000}
+.demoCreds{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px;padding:13px 15px;border:1px dashed #b3b6ab;border-radius:11px}
+.demoCreds b{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#8b8e87;margin-right:4px}
+.demoCreds code{font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#e8eae1;color:#151714;padding:6px 10px;border-radius:7px}
+.demoCreds small{flex-basis:100%;font-size:11px;color:#8b8e87;margin-top:2px}
 .projectMedia:after{content:"LIVE BUILD";position:absolute;left:18px;top:18px;padding:8px 11px;border-radius:7px;background:rgba(15,17,15,.84);color:#fff;font-size:9px;letter-spacing:.12em;backdrop-filter:blur(8px)}
 
 @media(min-width:1100px){
  .work{overflow:hidden}.projectCard{position:relative;padding-bottom:30px}
  .projectCard:not(:last-child):after{content:"";position:absolute;left:0;right:0;bottom:-72px;height:1px;background:#d3d5cd}
- .projectInfo .textLink{margin-top:7px}
+ .projectLinks{margin-top:7px}
+ .projectLinks .textLink{margin:0}
 }
 @media(max-width:700px){.projectMedia:after{left:10px;top:10px;padding:7px 9px}.projectInfo .textLink{width:100%;justify-content:space-between}}
