@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ContactForm, Counters, Cursor, HeroVisual, Navigation, Reveal } from '@/components/Interactions';
-import { projects, services, siteConfig, stack } from '@/data/config';
+import { projects, samples, services, siteConfig, stack } from '@/data/config';
 
 const Arrow=()=> <span aria-hidden="true">↗</span>;
 const SectionHead=({kicker,title,copy}:{kicker:string,title:string,copy?:string})=><div className="sectionHead reveal"><span className="kicker">{kicker}</span><h2>{title}</h2>{copy&&<p>{copy}</p>}</div>;
@@ -21,7 +21,9 @@ export default function Home(){
 
   <section className="work light" id="work"><SectionHead kicker="03 — Selected Work" title="Products, Platforms & Business Websites" copy="A selection of work across SaaS, real-time applications, WordPress, healthcare and corporate digital experiences."/><div className="projectList">{featuredProjects.map((p,i)=><article className={`projectCard reveal project-${p.slug}`} key={p.slug}><div className="projectMedia"><Image src={`${basePath}${p.image}`} alt={`${p.title} interface preview`} fill sizes="(max-width: 800px) 100vw, 55vw"/></div><div className="projectInfo"><span className="projectNo">0{i+1} / 0{featuredProjects.length}</span><small>{p.category}</small><h3>{p.title}</h3><p>{p.description}</p><div className="tags">{p.technologies.map(t=><span key={t}>{t}</span>)}</div><div className="challenge"><b>Challenge</b><p>{p.challenge}</p><b>Solution</b><p>{p.solution}</p></div><div className="projectLinks"><a href={p.liveUrl ? (p.liveUrl.startsWith('http') ? p.liveUrl : `${basePath}${p.liveUrl}`) : `#case-${p.slug}`} target={p.liveUrl?'_blank':undefined} rel="noreferrer" className="textLink">{p.liveUrl?'Open Live Website':'View Case Study'} <Arrow/></a>{p.adminUrl&&<a href={p.adminUrl} target="_blank" rel="noreferrer" className="textLink ghost">Admin Panel Demo <Arrow/></a>}</div>
 {p.demoLogin&&<div className="demoCreds"><b>Demo Login</b><code>{p.demoLogin.id}</code><code>{p.demoLogin.password}</code><small>Use these to explore the live admin</small></div>}
-</div></article>)}</div></section>
+</div></article>)}</div>
+  <div className="moreWork"><div className="moreHead reveal"><span className="kicker">More Live Work</span><h3>Recent Client & Sample Websites</h3><p>Live builds across e-commerce, healthcare, hospitality, travel and agency brands — real websites, real previews. Hover to explore each one.</p></div><div className="moreGrid">{samples.map(s=><a className="sampleCard reveal" key={s.slug} href={s.url} target="_blank" rel="noreferrer"><div className="sampleMedia"><img src={`${basePath}${s.image}`} alt={`${s.title} — website preview`} loading="lazy"/></div><div className="sampleInfo"><small>{s.category}</small><h4>{s.title}</h4><p>{s.description}</p><span className="sampleLink">Open Live Website <Arrow/></span></div></a>)}</div></div>
+</section>
 
   <section className="case" id="case-mrooi"><SectionHead kicker="04 — How I Work" title="Not ‘I Made a Website.’ A Complete Build System."/><div className="caseRail">{[['Problem','Clarify the business need, user friction and technical constraints.'],['Strategy','Shape information architecture, responsive UX and a practical technical direction.'],['Build','Develop reusable interfaces, backend functionality, APIs and integrations.'],['Optimize','Improve performance, SEO, accessibility, usability and technical reliability.']].map((x,i)=><div className="caseStep reveal" key={x[0]}><span>0{i+1}</span><h3>{x[0]}</h3><p>{x[1]}</p></div>)}</div></section>
 

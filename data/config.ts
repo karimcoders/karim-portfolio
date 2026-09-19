@@ -45,7 +45,7 @@ export const projects: Project[] = [
     solution: 'Built a high-impact scrolling narrative with colour selection, technical feature sections, blueprint storytelling and responsive product presentation.',
     features: ['Interactive colour selection', 'Floating product presentation', 'Editorial technology sections', 'Responsive experience'],
     year: '2026',
-    liveUrl: '/demos/nexora/',
+    liveUrl: '/demos/nexora/index.html',
     caseStudy: true,
     featured: true
   },
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     solution: 'Created a responsive experience around bold colour systems, isolated product visuals, concise product cards and a clear brand story.',
     features: ['Signature menu', 'Product-focused visuals', 'Responsive layouts', 'Contact experience'],
     year: '2026',
-    liveUrl: '/demos/siplab/#product',
+    liveUrl: '/demos/siplab/index.html#product',
     caseStudy: true,
     featured: true
   },
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     solution: 'Used layered imagery, oversized typography, product-led sections and subtle interaction to create a memorable browsing experience.',
     features: ['Editorial hero', 'Product storytelling', 'Motion details', 'Mobile-responsive design'],
     year: '2026',
-    liveUrl: '/demos/soma/',
+    liveUrl: '/demos/soma/index.html',
     caseStudy: true,
     featured: true
   }
@@ -99,3 +99,88 @@ export const stack = {
   SEO:['Technical SEO','Rank Math','Core Web Vitals','Schema','Search optimization'],
   Tools:['GitHub','Figma','Photoshop','Adobe XD','Illustrator','PyCharm','Android Studio']
 };
+
+export type Sample = { title: string; slug: string; category: string; description: string; image: string; url: string };
+
+export const samples: Sample[] = [
+  {
+    title: 'Moto Genius — Bike Parts Store',
+    slug: 'motogenius',
+    category: 'E-Commerce • Bike Accessories',
+    description: 'SEO-optimized premium bike parts & accessories store with a clean product catalog and fast buying flow for riders.',
+    image: '/projects/motogenius.jpg',
+    url: 'https://motogeniusstore.com/'
+  },
+  {
+    title: 'M Print House — Printing UAE',
+    slug: 'mprinthouse',
+    category: 'E-Commerce • Printing Services',
+    description: 'Printing & branding services site for Dubai and Sharjah — banners, 3D signage, custom flags, merch and corporate gifts.',
+    image: '/projects/mprinthouse.jpg',
+    url: 'https://mprinthouse.ae/'
+  },
+  {
+    title: 'Mr.Ooi — Technical SEO Agency',
+    slug: 'mrooi',
+    category: 'Agency Website • Technical SEO',
+    description: 'Custom build for a technical SEO & AI-visibility studio — Core Web Vitals diagnostics, fixed-price offers and free tools.',
+    image: '/projects/mrooi.jpg',
+    url: 'https://mrooi.com/'
+  },
+  {
+    title: 'Revamp — Creative Agency',
+    slug: 'revamp',
+    category: 'Agency Website • Creative Services',
+    description: 'Creative agency website — web design, e-commerce, branding and social media campaigns in one sharp brand experience.',
+    image: '/projects/revamp.jpg',
+    url: 'https://revamp.ooisolutions.my/'
+  },
+  {
+    title: 'Vacations Pilot — Travel & Tours',
+    slug: 'vacationspilot',
+    category: 'Travel • Tourism Website',
+    description: 'Travel website with destination showcases — Kerala backwaters, Sikkim, Goa — and mood-based trip planning.',
+    image: '/projects/vacationspilot.jpg',
+    url: 'https://vacationspilot.com/'
+  },
+  {
+    title: 'Vision Eye Care — Hospital Site',
+    slug: 'roseybrown',
+    category: 'Healthcare • Eye Hospital',
+    description: 'Eye hospital website with online booking, cataract & refractive surgery info and specialist-led content. WordPress + Elementor.',
+    image: '/projects/roseybrown.jpg',
+    url: 'https://rosybrown-termite-108178.hostingersite.com/'
+  },
+  {
+    title: 'MaxiVision — 30 Years Page',
+    slug: 'maxivision',
+    category: 'Healthcare • Milestone Landing',
+    description: '30-years milestone landing page for MaxiVision Eye Hospitals — journey, leadership stories and celebration.',
+    image: '/projects/maxivision.jpg',
+    url: 'https://www.maxivisioneyehospital.com/30years/'
+  },
+  {
+    title: 'La Gioia — Italian Restaurant',
+    slug: 'lagioia',
+    category: 'Hospitality • Restaurant Website',
+    description: 'Italian restaurant site in Indiranagar, Bangalore — Neapolitan pizzas, handcrafted pastas, brunch and a curated bar menu.',
+    image: '/projects/lagioia.jpg',
+    url: 'https://lagioiaristorante.com/'
+  },
+  {
+    title: 'MaasinMe — Silk Saree Store',
+    slug: 'maasinme',
+    category: 'E-Commerce • Handloom (Shopify)',
+    description: 'Shopify store for pure handloom silk sarees — Sambalpuri, Berhampuri and Kotpad weaves with a clean product experience.',
+    image: '/projects/maasinme.jpg',
+    url: 'https://maasinme.com/'
+  },
+  {
+    title: 'Pines — Nutrition Brand',
+    slug: 'pines',
+    category: 'Nutrition • Brand Website',
+    description: 'Nutrition & wellness brand website with clean product storytelling for health-first families.',
+    image: '/projects/pines.jpg',
+    url: 'https://pinesnutrition.org/'
+  }
+];
