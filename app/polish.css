@@ -7,3 +7,98 @@ footer{position:relative;overflow:hidden}.footerMain{position:relative;z-index:1
 @media(max-width:900px){.portraitVisual{height:510px!important}.portraitStage{width:min(100%,430px);height:500px}.portraitFrame{inset:20px 24px 20px}.portraitAvailability{left:0;top:60px}.portraitStage .fc1{right:0}.portraitStage .fc2{left:0}.portraitStage .fc3{right:4px}}
 @media(max-width:600px){.portraitVisual{height:440px!important}.portraitStage{width:340px;height:425px}.portraitFrame{inset:18px 14px}.portraitAvailability{left:4px;top:45px;padding:10px 12px;font-size:8px}.portraitStage .fc1{right:-2px;top:18px}.portraitStage .fc2{left:-2px;bottom:5px}.portraitStage .fc3{bottom:18px}.finalCta{text-align:center}.finalCta h2{font-size:clamp(48px,15vw,68px)!important}.finalCta>div{display:grid}.footerMain{display:grid;grid-template-columns:1fr;gap:38px;padding:55px 0 35px}.footerLogo{font-size:58px!important}.footerIdentity p{margin:10px 0 0}.footerProject{text-align:left}.footerProject a{font-size:22px;font-weight:800;margin-top:9px}.footerProject a span{margin-left:18px}footer nav{border-top:1px solid #30332e;padding-top:24px}.footBottom{display:grid;grid-template-columns:1fr;gap:12px}.footBottom a{margin-top:5px}}
 @media(max-width:360px){.portraitStage{width:300px}.portraitStage .fc1{display:none}.portraitAvailability{left:8px}}
+
+/* ---------- WhatsApp float ---------- */
+.whatsFloat{position:fixed;z-index:120;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 32px rgba(37,211,102,.4);transition:.25s}
+.whatsFloat:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 18px 40px rgba(37,211,102,.5)}
+.whatsPulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.55);animation:whatsPulse 2.2s ease-out infinite;pointer-events:none}
+@keyframes whatsPulse{0%{transform:scale(.9);opacity:1}70%{transform:scale(1.45);opacity:0}100%{transform:scale(1.45);opacity:0}}
+.whatsTip{position:absolute;right:70px;top:50%;transform:translateY(-50%) translateX(6px);background:#151714;color:#fff;font-size:11px;font-weight:700;letter-spacing:.02em;padding:9px 13px;border-radius:9px;white-space:nowrap;opacity:0;pointer-events:none;transition:.25s}
+.whatsFloat:hover .whatsTip{opacity:1;transform:translateY(-50%) translateX(0)}
+
+/* ---------- Chatbot ---------- */
+.chatFloat{position:fixed;z-index:120;right:22px;bottom:92px;width:58px;height:58px;border-radius:50%;background:#c7ff3d;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.3);transition:.25s}
+.chatFloat:hover{transform:translateY(-3px) scale(1.05)}
+.chatFloat.on{background:#151714;color:#c7ff3d}
+.chatFloat.on svg path{fill:#c7ff3d}
+.chatDot{position:absolute;right:4px;top:4px;width:13px;height:13px;border-radius:50%;background:#25d366;border:2px solid #c7ff3d}
+.chatClose{font-size:19px;font-weight:800;color:#111;line-height:1}
+.chatFloat.on .chatClose{color:#c7ff3d}
+.chatPanel{position:fixed;z-index:130;right:22px;bottom:164px;width:min(360px,calc(100vw - 32px));height:min(480px,62vh);display:flex;flex-direction:column;background:#f6f6f0;color:#151714;border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45);animation:chatIn .28s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes chatIn{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.chatHead{display:flex;align-items:center;gap:11px;padding:15px 16px;background:#151714;color:#fff}
+.chatHead b{font-size:14px;display:block}
+.chatHead small{font-size:10.5px;color:#a8b96a;display:flex;align-items:center;gap:6px}
+.chatHead small i{width:7px;height:7px;border-radius:50%;background:#25d366}
+.chatAvatar{width:36px;height:36px;border-radius:50%;background:#c7ff3d;color:#111;font-weight:900;font-size:16px;display:grid;place-items:center}
+.chatHeadClose{margin-left:auto;background:transparent;border:0;color:#8b8e87;font-size:15px;cursor:pointer;padding:4px}
+.chatHeadClose:hover{color:#fff}
+.chatBody{flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:10px;background:#eceee4}
+.chatMsg{max-width:85%;padding:10px 13px;border-radius:13px;font-size:13px;line-height:1.55;animation:chatMsgIn .25s ease}
+@keyframes chatMsgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.chatMsg.bot{align-self:flex-start;background:#fff;border:1px solid #dfe1d6;border-bottom-left-radius:4px}
+.chatMsg.user{align-self:flex-end;background:#151714;color:#f2f2eb;border-bottom-right-radius:4px}
+.chatMsg p{margin:0}
+.chatMsg.typing{display:flex;gap:5px;align-items:center;padding:14px 15px}
+.chatMsg.typing span{width:7px;height:7px;border-radius:50%;background:#9a9d95;animation:typingB 1s infinite}
+.chatMsg.typing span:nth-child(2){animation-delay:.15s}
+.chatMsg.typing span:nth-child(3){animation-delay:.3s}
+@keyframes typingB{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(-4px);opacity:1}}
+.chatActions{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+.chatActions button{background:#c7ff3d;border:0;border-radius:20px;padding:8px 12px;font-size:11.5px;font-weight:800;cursor:pointer;transition:.2s}
+.chatActions button:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,.15)}
+.chatQuick{display:flex;gap:7px;padding:10px 14px 0;background:#eceee4;overflow-x:auto;scrollbar-width:none}
+.chatQuick::-webkit-scrollbar{display:none}
+.chatQuick button{flex:0 0 auto;background:#fff;border:1px solid #d5d7cb;border-radius:20px;padding:7px 12px;font-size:11.5px;font-weight:700;cursor:pointer;transition:.2s}
+.chatQuick button:hover{border-color:#151714}
+.chatInput{display:flex;gap:8px;padding:12px 14px;background:#eceee4}
+.chatInput input{flex:1;min-width:0;border:1px solid #d5d7cb;border-radius:10px;padding:11px 13px;font-size:13px;background:#fff;outline:none}
+.chatInput input:focus{border-color:#151714}
+.chatInput button{width:44px;border:0;border-radius:10px;background:#151714;color:#c7ff3d;font-size:15px;cursor:pointer;transition:.2s}
+.chatInput button:hover{background:#000}
+
+/* ---------- Price line ---------- */
+.priceLine{margin:22px 0 0;font-size:13px;letter-spacing:.02em;color:#9a9e97;display:flex;align-items:center;gap:10px}
+.priceLine:before{content:"";width:26px;height:1px;background:#c7ff3d}
+.priceLine b{color:#c7ff3d;font-weight:800}
+
+/* ---------- Project CTA ---------- */
+.projectCta{margin-top:22px;padding:15px 18px;border:1px dashed #c3c6ba;border-radius:12px;font-size:13.5px;font-weight:600;color:#55594f;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.projectCta a{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#151714;border-bottom:2px solid #c7ff3d;padding-bottom:3px;transition:.2s}
+.projectCta a:hover{border-color:#151714}
+
+/* ---------- Samples CTA strip ---------- */
+.samplesCta{margin-top:26px;padding:26px 30px;border-radius:16px;background:#151714;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.samplesCta b{font-size:22px;letter-spacing:-.03em;display:block}
+.samplesCta span{font-size:13px;color:#9a9e97}
+.samplesCta .button{flex:0 0 auto}
+
+/* ---------- Testimonials ---------- */
+.testimonials{padding:120px 5vw}
+.testimonialGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.testimonial{margin:0;padding:30px 28px;border:1px solid #30332f;border-radius:16px;background:#151815;display:flex;flex-direction:column;transition:.3s}
+.testimonial:hover{transform:translateY(-6px);border-color:#c7ff3d}
+.tStars{color:#c7ff3d;font-size:14px;letter-spacing:3px}
+.testimonial blockquote{margin:18px 0 24px;font-size:15px;line-height:1.7;color:#d4d6d0;flex:1}
+.testimonial figcaption b{display:block;font-size:14px}
+.testimonial figcaption small{font-size:12px;color:#8b8e87}
+
+/* ---------- Form buttons ---------- */
+.formBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.formBtns .button{flex:1;min-width:200px}
+.waBtn{border-color:#25d366;color:#25d366}
+.waBtn:hover{background:#25d366;color:#111}
+.formOk{margin:12px 0 0;font-size:13px;color:#c7ff3d;font-weight:700}
+.contactMeta a{color:#c7ff3d}
+
+@media(max-width:700px){
+ .whatsFloat{right:16px;bottom:16px;width:54px;height:54px}
+ .whatsTip{display:none}
+ .chatFloat{right:16px;bottom:82px;width:54px;height:54px}
+ .chatPanel{right:16px;bottom:148px;height:min(460px,58vh)}
+ .projectCta{justify-content:flex-start}
+ .samplesCta{flex-direction:column;align-items:flex-start;padding:22px}
+ .testimonialGrid{grid-template-columns:1fr}
+ .testimonials{padding:72px 18px}
+ .formBtns .button{min-width:100%}
+}

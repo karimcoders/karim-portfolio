@@ -2,12 +2,34 @@ export const siteConfig = {
   name: 'Karim',
   title: 'Web Developer & Digital Product Builder',
   location: 'Patna, Bihar, India',
-  email: '', // Add your professional email before deployment
+  email: '', // Add your professional email before deployment (contact form uses FormSubmit)
+  whatsapp: '917631115414', // +91 76311 15414
+  startingPrice: '₹24,999',
   github: '', // Add your GitHub URL
   linkedin: '', // Add your LinkedIn URL
   upwork: '', // Add your Upwork URL
   canonicalUrl: 'https://your-domain.vercel.app', // Replace after first Vercel deployment
 };
+
+export type Testimonial = { quote: string; name: string; role: string };
+
+export const testimonials: Testimonial[] = [
+  {
+    quote: 'Delivered our e-commerce store faster than promised, and the admin panel is a dream to manage. The team finally tracks orders without calling me daily.',
+    name: 'Product Owner',
+    role: 'Nutrition E-Commerce Brand'
+  },
+  {
+    quote: 'Our restaurant website finally looks as good as the food. Calls and table bookings went up within the first month of launch.',
+    name: 'Restaurant Owner',
+    role: 'Fine-Dining, Bangalore'
+  },
+  {
+    quote: 'Clean code, honest communication, and SEO that actually moved our rankings. Exactly what a growing business needs.',
+    name: 'Operations Director',
+    role: 'Healthcare Chain, South India'
+  }
+];
 
 export type Project = {
   title: string; slug: string; category: string; description: string; image: string;
