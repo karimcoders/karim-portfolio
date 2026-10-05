@@ -4,7 +4,7 @@ export const siteConfig = {
   location: 'Patna, Bihar, India',
   email: '', // Add your professional email before deployment (contact form uses FormSubmit)
   whatsapp: '917631115414', // +91 76311 15414
-  startingPrice: '₹5,000',
+  startingPrice: '₹4,999',
   github: '', // Add your GitHub URL
   linkedin: '', // Add your LinkedIn URL
   upwork: '', // Add your Upwork URL
